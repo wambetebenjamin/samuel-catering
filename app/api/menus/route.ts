@@ -1,0 +1,1 @@
+import {NextRequest,NextResponse} from 'next/server';import {menus} from '@/lib/data';export function GET(req:NextRequest){const q=req.nextUrl.searchParams;return NextResponse.json(menus.filter(x=>(!q.get('cuisine')||x.cuisine.toLowerCase().includes(q.get('cuisine')!.toLowerCase()))&&(!q.get('dietary')||x.tags.includes(q.get('dietary')!.toLowerCase()))))}

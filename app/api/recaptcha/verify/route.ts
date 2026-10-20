@@ -1,0 +1,1 @@
+import {NextRequest,NextResponse} from 'next/server';import {verifyCaptcha} from '@/lib/server';export async function POST(req:NextRequest){const {token,action}=await req.json();return NextResponse.json({success:await verifyCaptcha(token,action)})}

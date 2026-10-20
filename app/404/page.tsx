@@ -1,0 +1,1 @@
+import Link from 'next/link';import {Utensils} from 'lucide-react';export default function NotFoundPage(){return <div className="notfound"><Utensils/><h1>This menu item does not exist.</h1><Link className="button" href="/menus">Back to Menus</Link></div>}
