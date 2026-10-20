@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';export async function GET(_req:Request,{params}:{params:Promise<{ref:string}>}){const {ref}=await params;return NextResponse.json({ref,status:'received',message:'Our team will be in touch shortly.'})}

@@ -1,0 +1,1 @@
+'use client';export default function ErrorPage({reset}:{error:Error&{digest?:string};reset:()=>void}){return <div className="notfound"><h1>Something went wrong.</h1><button className="button" onClick={()=>reset()}>Try Again</button><p>WhatsApp <a href="https://wa.me/254112272061">+254112272061</a></p></div>}

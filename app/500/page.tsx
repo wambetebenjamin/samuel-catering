@@ -1,0 +1,1 @@
+'use client';import {PageHead} from '@/components/Site';export default function ServerError(){return <><PageHead title="Something went wrong"/><div className="notfound"><p>We could not serve this page just now.</p><button className="button" onClick={()=>location.reload()}>Try Again</button><p>Need help? WhatsApp <a href="https://wa.me/254112272061">+254112272061</a></p></div></>}
